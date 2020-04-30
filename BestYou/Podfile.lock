@@ -1,0 +1,32 @@
+PODS:
+  - GPUImage (0.1.7)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
+  - TZImagePickerController (3.2.9)
+
+DEPENDENCIES:
+  - GPUImage
+  - Masonry
+  - SVProgressHUD
+  - Toast (~> 4.0.0)
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GPUImage
+    - Masonry
+    - SVProgressHUD
+    - Toast
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
+
+PODFILE CHECKSUM: 54c796adeb66373bd93acbb539483e7cc7f5eee5
+
+COCOAPODS: 1.8.4
