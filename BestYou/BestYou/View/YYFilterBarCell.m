@@ -37,6 +37,7 @@ NSString *const kYYFilterBarCellID = @"kYYFilterBarCellID";
 {
     _nameLabel = [[UILabel alloc] initWithFrame:self.bounds];
     _nameLabel.textColor = [UIColor whiteColor];
+    _nameLabel.numberOfLines = 2;
     _nameLabel.font = [UIFont systemFontOfSize:16];
     _nameLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:_nameLabel];
