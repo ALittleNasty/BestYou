@@ -7,12 +7,11 @@
 //
 
 #import "GPUTakePhotoVC.h"
+#import "BYUtil.h"
+
 #import <GPUImage.h>
-#import <Toast/Toast.h>
 #import <Masonry/Masonry.h>
-#import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface GPUTakePhotoVC ()
 @property (nonatomic, strong) GPUImageStillCamera *camera;
@@ -118,18 +117,7 @@
 {
     [_camera capturePhotoAsJPEGProcessedUpToFilter:_filterGroup withCompletionHandler:^(NSData *processedJPEG, NSError *error) {
         
-        [SVProgressHUD show];
-        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-            
-            [[PHAssetCreationRequest creationRequestForAsset] addResourceWithType:PHAssetResourceTypePhoto data:processedJPEG options:nil];
-        } completionHandler:^(BOOL success, NSError * _Nullable error) {
-            if (success) {
-                [SVProgressHUD dismissWithCompletion:^{
-                    [self.view makeToast:@"保存照片成功!" duration:1.0 position:CSToastPositionCenter];
-                }];
-            }
-        }];
-        
+        [BYUtil saveImageData:processedJPEG];
     }];
 }
 @end

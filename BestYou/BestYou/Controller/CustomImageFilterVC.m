@@ -7,7 +7,7 @@
 //
 
 #import "CustomImageFilterVC.h"
-
+#import "BYUtil.h"
 #import "YYFilterBar.h"
 
 #import <GLKit/GLKit.h>
@@ -40,6 +40,8 @@ typedef struct {
 @property (nonatomic, assign) GLuint textureID;
 // 滤镜工具栏
 @property (nonatomic, strong) YYFilterBar *filterBar;
+
+@property (nonatomic) GLuint offscreenFramebuffer;
 @end
 
 @implementation CustomImageFilterVC
@@ -480,5 +482,84 @@ typedef struct {
     [self setupProgramWithShaderName:shaderName];
 }
 
+#pragma mark - Save Image
 
+- (void)createOffscreenBuffer:(UIImage *)image
+{
+    glGenFramebuffers(1, &_offscreenFramebuffer);
+    glBindFramebuffer(GL_FRAMEBUFFER, _offscreenFramebuffer);
+    
+    //Create the texture
+    GLuint texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA,  image.size.width, image.size.height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    
+    //Bind the texture to your FBO
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
+    
+    //Test if everything failed
+    GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+    if(status != GL_FRAMEBUFFER_COMPLETE) {
+        printf("failed to make complete framebuffer object %x", status);
+    }
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+
+/*
+ 
+ 参考叶孤城的文章: https://zhuanlan.zhihu.com/p/32194345
+ 
+- (void)getCurrentImage
+{
+    glBindFramebuffer(GL_FRAMEBUFFER, _offscreenFramebuffer);
+    glViewport(0, 0, _image.size.width, _image.size.height);
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    [shaderCompiler prepareToDraw];
+
+    glUniform1f(_brightness, _brightSlider.value);
+    [self activeTexture];
+
+    [self drawRaw];
+    
+    [self getImageFromBuffe:width withHeight:height];
+}
+
+- (void)getImageFromBuffe:(int)width withHeight:(int)height {
+    GLint x = 0, y = 0;
+    NSInteger dataLength = width * height * 4;
+    GLubyte *data = (GLubyte*)malloc(dataLength * sizeof(GLubyte));
+    
+    glPixelStorei(GL_PACK_ALIGNMENT, 4);
+    glReadPixels(x, y, width, height, GL_RGBA, GL_UNSIGNED_BYTE, data);
+    
+    CGDataProviderRef ref = CGDataProviderCreateWithData(NULL, data, dataLength, NULL);
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    CGImageRef iref = CGImageCreate(width, height, 8, 32, width * 4, colorspace, kCGBitmapByteOrder32Big | kCGImageAlphaPremultipliedLast,
+                                    ref, NULL, true, kCGRenderingIntentDefault);
+    
+    
+    UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    CGContextRef cgcontext = UIGraphicsGetCurrentContext();
+    CGContextSetBlendMode(cgcontext, kCGBlendModeCopy);
+    CGContextDrawImage(cgcontext, CGRectMake(0.0, 0.0, width, height), iref);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    free(data);
+    CFRelease(ref);
+    CFRelease(colorspace);
+    CGImageRelease(iref);
+    
+    [BYUtil saveImage:image];
+}
+*/
 @end

@@ -9,6 +9,7 @@
 #import "GPUStillImageVC.h"
 #import <GPUImage.h>
 #import <Masonry/Masonry.h>
+#import "BYUtil.h"
 
 @interface GPUStillImageVC ()
 
@@ -29,6 +30,9 @@
 
 - (void)setupUI
 {
+    UIBarButtonItem *saveItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(savePicture)];
+    self.navigationItem.rightBarButtonItem = saveItem;
+    
     _resultImageView = [[UIImageView alloc] initWithImage:_image];
     [self.view addSubview:_resultImageView];
     [_resultImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,6 +60,8 @@
     _brightnessFilter.brightness = 0.0;
 }
 
+#pragma mark - Action
+
 - (void)sliderValueChanged:(UISlider *)slider
 {
     // 更新亮度值
@@ -81,6 +87,11 @@
     
     //更新图片
     _resultImageView.image = newImage;
+}
+
+- (void)savePicture
+{
+    [BYUtil saveImage:_resultImageView.image];
 }
 
 @end
