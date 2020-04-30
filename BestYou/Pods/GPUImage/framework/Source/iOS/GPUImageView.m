@@ -227,12 +227,25 @@
 #pragma mark -
 #pragma mark Handling fill mode
 
-- (void)recalculateViewGeometry;
+- (void)recalculateViewGeometry
+{
+    NSLog(@"Is main thread: %@", [NSThread isMainThread] ? @"YES" : @"NO");
+    
+    if ([NSThread isMainThread] == NO) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self hy_recalculateViewGeometryWithSize:self.bounds.size];
+        });
+    } else {
+        [self hy_recalculateViewGeometryWithSize:self.bounds.size];
+    }
+}
+
+- (void)hy_recalculateViewGeometryWithSize:(CGSize)size
 {
     runSynchronouslyOnVideoProcessingQueue(^{
         CGFloat heightScaling, widthScaling;
         
-        CGSize currentViewSize = self.bounds.size;
+        CGSize currentViewSize = size;
         
         //    CGFloat imageAspectRatio = inputImageSize.width / inputImageSize.height;
         //    CGFloat viewAspectRatio = currentViewSize.width / currentViewSize.height;
