@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,48 @@
 		3922E18C245AA1D9003C8B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3922E18B245AA1D9003C8B10 /* Assets.xcassets */; };
 		3922E18F245AA1D9003C8B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3922E18D245AA1D9003C8B10 /* LaunchScreen.storyboard */; };
 		3922E192245AA1D9003C8B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E191245AA1D9003C8B10 /* main.m */; };
+		3922E19B245AA613003C8B10 /* kunkun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3922E199245AA613003C8B10 /* kunkun.jpg */; };
+		3922E19C245AA613003C8B10 /* test_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3922E19A245AA613003C8B10 /* test_girl.jpg */; };
+		3922E1D1245AA667003C8B10 /* gray.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E19F245AA667003C8B10 /* gray.vsh */; };
+		3922E1D2245AA667003C8B10 /* gray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A0245AA667003C8B10 /* gray.fsh */; };
+		3922E1D3245AA667003C8B10 /* reversed.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A2245AA667003C8B10 /* reversed.fsh */; };
+		3922E1D4245AA667003C8B10 /* reversed.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A3245AA667003C8B10 /* reversed.vsh */; };
+		3922E1D5245AA667003C8B10 /* mosaic.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A5245AA667003C8B10 /* mosaic.vsh */; };
+		3922E1D6245AA667003C8B10 /* mosaic6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A6245AA667003C8B10 /* mosaic6.fsh */; };
+		3922E1D7245AA667003C8B10 /* mosaic3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A7245AA667003C8B10 /* mosaic3.fsh */; };
+		3922E1D8245AA667003C8B10 /* mosaic.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A8245AA667003C8B10 /* mosaic.fsh */; };
+		3922E1D9245AA667003C8B10 /* mosaic3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A9245AA667003C8B10 /* mosaic3.vsh */; };
+		3922E1DA245AA667003C8B10 /* mosaic6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1AB245AA667003C8B10 /* mosaic6.vsh */; };
+		3922E1DB245AA667003C8B10 /* vortex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1AD245AA667003C8B10 /* vortex.vsh */; };
+		3922E1DC245AA667003C8B10 /* vortex.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1AE245AA667003C8B10 /* vortex.fsh */; };
+		3922E1DD245AA667003C8B10 /* shineWhite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B0245AA667003C8B10 /* shineWhite.vsh */; };
+		3922E1DE245AA667003C8B10 /* shineWhite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B1245AA667003C8B10 /* shineWhite.fsh */; };
+		3922E1DF245AA667003C8B10 /* scale.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B5245AA667003C8B10 /* scale.vsh */; };
+		3922E1E0245AA667003C8B10 /* scale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B6245AA667003C8B10 /* scale.fsh */; };
+		3922E1E1245AA667003C8B10 /* shake.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B8245AA667003C8B10 /* shake.fsh */; };
+		3922E1E2245AA667003C8B10 /* shake.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1B9245AA667003C8B10 /* shake.vsh */; };
+		3922E1E3245AA667003C8B10 /* soulOut.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1BC245AA667003C8B10 /* soulOut.vsh */; };
+		3922E1E4245AA667003C8B10 /* soulOut.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1BD245AA667003C8B10 /* soulOut.fsh */; };
+		3922E1E5245AA667003C8B10 /* glitch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C0245AA667003C8B10 /* glitch.vsh */; };
+		3922E1E6245AA667003C8B10 /* glitch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C1245AA667003C8B10 /* glitch.fsh */; };
+		3922E1E7245AA667003C8B10 /* splitScreen3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C4245AA667003C8B10 /* splitScreen3.vsh */; };
+		3922E1E8245AA667003C8B10 /* splitScreen2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C5245AA667003C8B10 /* splitScreen2.vsh */; };
+		3922E1E9245AA667003C8B10 /* splitScreen4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C6245AA667003C8B10 /* splitScreen4.vsh */; };
+		3922E1EA245AA667003C8B10 /* splitScreen6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C7245AA667003C8B10 /* splitScreen6.vsh */; };
+		3922E1EB245AA667003C8B10 /* splitScreen9.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C8245AA667003C8B10 /* splitScreen9.fsh */; };
+		3922E1EC245AA667003C8B10 /* splitScreen4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1C9245AA667003C8B10 /* splitScreen4.fsh */; };
+		3922E1ED245AA667003C8B10 /* splitScreen6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1CA245AA667003C8B10 /* splitScreen6.fsh */; };
+		3922E1EE245AA667003C8B10 /* splitScreen3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1CB245AA667003C8B10 /* splitScreen3.fsh */; };
+		3922E1EF245AA667003C8B10 /* splitScreen2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1CC245AA667003C8B10 /* splitScreen2.fsh */; };
+		3922E1F0245AA667003C8B10 /* splitScreen9.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1CD245AA667003C8B10 /* splitScreen9.vsh */; };
+		3922E1F1245AA667003C8B10 /* normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1CF245AA667003C8B10 /* normal.fsh */; };
+		3922E1F2245AA667003C8B10 /* normal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1D0245AA667003C8B10 /* normal.vsh */; };
+		3922E1F8245AA68C003C8B10 /* YYFilterBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E1F4245AA68C003C8B10 /* YYFilterBarCell.m */; };
+		3922E1F9245AA68C003C8B10 /* YYFilterBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E1F5245AA68C003C8B10 /* YYFilterBar.m */; };
+		3922E1FD245AA71E003C8B10 /* GPUStillImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E1FC245AA71E003C8B10 /* GPUStillImageVC.m */; };
+		3922E200245AA735003C8B10 /* GPUVideoCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E1FF245AA735003C8B10 /* GPUVideoCameraVC.m */; };
+		3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */; };
+		3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +72,60 @@
 		3922E18E245AA1D9003C8B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3922E190245AA1D9003C8B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3922E191245AA1D9003C8B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3922E199245AA613003C8B10 /* kunkun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunkun.jpg; sourceTree = "<group>"; };
+		3922E19A245AA613003C8B10 /* test_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_girl.jpg; sourceTree = "<group>"; };
+		3922E19F245AA667003C8B10 /* gray.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.vsh; sourceTree = "<group>"; };
+		3922E1A0245AA667003C8B10 /* gray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.fsh; sourceTree = "<group>"; };
+		3922E1A2245AA667003C8B10 /* reversed.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversed.fsh; sourceTree = "<group>"; };
+		3922E1A3245AA667003C8B10 /* reversed.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reversed.vsh; sourceTree = "<group>"; };
+		3922E1A5245AA667003C8B10 /* mosaic.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic.vsh; sourceTree = "<group>"; };
+		3922E1A6245AA667003C8B10 /* mosaic6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic6.fsh; sourceTree = "<group>"; };
+		3922E1A7245AA667003C8B10 /* mosaic3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic3.fsh; sourceTree = "<group>"; };
+		3922E1A8245AA667003C8B10 /* mosaic.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic.fsh; sourceTree = "<group>"; };
+		3922E1A9245AA667003C8B10 /* mosaic3.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic3.vsh; sourceTree = "<group>"; };
+		3922E1AA245AA667003C8B10 /* mosaic6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosaic6.h; sourceTree = "<group>"; };
+		3922E1AB245AA667003C8B10 /* mosaic6.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mosaic6.vsh; sourceTree = "<group>"; };
+		3922E1AD245AA667003C8B10 /* vortex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vortex.vsh; sourceTree = "<group>"; };
+		3922E1AE245AA667003C8B10 /* vortex.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vortex.fsh; sourceTree = "<group>"; };
+		3922E1B0245AA667003C8B10 /* shineWhite.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shineWhite.vsh; sourceTree = "<group>"; };
+		3922E1B1245AA667003C8B10 /* shineWhite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shineWhite.fsh; sourceTree = "<group>"; };
+		3922E1B2245AA667003C8B10 /* shineWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shineWhite.h; sourceTree = "<group>"; };
+		3922E1B4245AA667003C8B10 /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		3922E1B5245AA667003C8B10 /* scale.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.vsh; sourceTree = "<group>"; };
+		3922E1B6245AA667003C8B10 /* scale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = scale.fsh; sourceTree = "<group>"; };
+		3922E1B8245AA667003C8B10 /* shake.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shake.fsh; sourceTree = "<group>"; };
+		3922E1B9245AA667003C8B10 /* shake.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shake.vsh; sourceTree = "<group>"; };
+		3922E1BA245AA667003C8B10 /* shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shake.h; sourceTree = "<group>"; };
+		3922E1BC245AA667003C8B10 /* soulOut.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soulOut.vsh; sourceTree = "<group>"; };
+		3922E1BD245AA667003C8B10 /* soulOut.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = soulOut.fsh; sourceTree = "<group>"; };
+		3922E1BE245AA667003C8B10 /* soulOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soulOut.h; sourceTree = "<group>"; };
+		3922E1C0245AA667003C8B10 /* glitch.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glitch.vsh; sourceTree = "<group>"; };
+		3922E1C1245AA667003C8B10 /* glitch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glitch.fsh; sourceTree = "<group>"; };
+		3922E1C2245AA667003C8B10 /* glitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glitch.h; sourceTree = "<group>"; };
+		3922E1C4245AA667003C8B10 /* splitScreen3.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen3.vsh; sourceTree = "<group>"; };
+		3922E1C5245AA667003C8B10 /* splitScreen2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen2.vsh; sourceTree = "<group>"; };
+		3922E1C6245AA667003C8B10 /* splitScreen4.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen4.vsh; sourceTree = "<group>"; };
+		3922E1C7245AA667003C8B10 /* splitScreen6.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen6.vsh; sourceTree = "<group>"; };
+		3922E1C8245AA667003C8B10 /* splitScreen9.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen9.fsh; sourceTree = "<group>"; };
+		3922E1C9245AA667003C8B10 /* splitScreen4.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen4.fsh; sourceTree = "<group>"; };
+		3922E1CA245AA667003C8B10 /* splitScreen6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen6.fsh; sourceTree = "<group>"; };
+		3922E1CB245AA667003C8B10 /* splitScreen3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen3.fsh; sourceTree = "<group>"; };
+		3922E1CC245AA667003C8B10 /* splitScreen2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen2.fsh; sourceTree = "<group>"; };
+		3922E1CD245AA667003C8B10 /* splitScreen9.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = splitScreen9.vsh; sourceTree = "<group>"; };
+		3922E1CF245AA667003C8B10 /* normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = normal.fsh; sourceTree = "<group>"; };
+		3922E1D0245AA667003C8B10 /* normal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = normal.vsh; sourceTree = "<group>"; };
+		3922E1F4245AA68C003C8B10 /* YYFilterBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFilterBarCell.m; sourceTree = "<group>"; };
+		3922E1F5245AA68C003C8B10 /* YYFilterBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFilterBar.m; sourceTree = "<group>"; };
+		3922E1F6245AA68C003C8B10 /* YYFilterBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFilterBarCell.h; sourceTree = "<group>"; };
+		3922E1F7245AA68C003C8B10 /* YYFilterBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFilterBar.h; sourceTree = "<group>"; };
+		3922E1FB245AA71E003C8B10 /* GPUStillImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUStillImageVC.h; sourceTree = "<group>"; };
+		3922E1FC245AA71E003C8B10 /* GPUStillImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUStillImageVC.m; sourceTree = "<group>"; };
+		3922E1FE245AA735003C8B10 /* GPUVideoCameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUVideoCameraVC.h; sourceTree = "<group>"; };
+		3922E1FF245AA735003C8B10 /* GPUVideoCameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUVideoCameraVC.m; sourceTree = "<group>"; };
+		3922E201245AA78D003C8B10 /* CustomImageFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomImageFilterVC.h; sourceTree = "<group>"; };
+		3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomImageFilterVC.m; sourceTree = "<group>"; };
+		3922E20C245AACBF003C8B10 /* GPUTakePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUTakePhotoVC.h; sourceTree = "<group>"; };
+		3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUTakePhotoVC.m; sourceTree = "<group>"; };
 		9D0EF24474053BF8C3400142 /* Pods-BestYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestYou.release.xcconfig"; path = "Target Support Files/Pods-BestYou/Pods-BestYou.release.xcconfig"; sourceTree = "<group>"; };
 		F6D968720038DFB656BCE6A4 /* libPods-BestYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BestYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED910F7F6C41C6E7506053B /* Pods-BestYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestYou.debug.xcconfig"; path = "Target Support Files/Pods-BestYou/Pods-BestYou.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +164,10 @@
 		3922E17E245AA1D4003C8B10 /* BestYou */ = {
 			isa = PBXGroup;
 			children = (
+				3922E1FA245AA6A5003C8B10 /* Controller */,
+				3922E1F3245AA68C003C8B10 /* View */,
+				3922E19D245AA667003C8B10 /* Shader */,
+				3922E198245AA613003C8B10 /* Resource */,
 				3922E17F245AA1D5003C8B10 /* AppDelegate.h */,
 				3922E180245AA1D5003C8B10 /* AppDelegate.m */,
 				3922E182245AA1D5003C8B10 /* SceneDelegate.h */,
@@ -81,6 +181,176 @@
 				3922E191245AA1D9003C8B10 /* main.m */,
 			);
 			path = BestYou;
+			sourceTree = "<group>";
+		};
+		3922E198245AA613003C8B10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3922E199245AA613003C8B10 /* kunkun.jpg */,
+				3922E19A245AA613003C8B10 /* test_girl.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3922E19D245AA667003C8B10 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				3922E19E245AA667003C8B10 /* Gray */,
+				3922E1A1245AA667003C8B10 /* Reversed */,
+				3922E1A4245AA667003C8B10 /* Mosaic */,
+				3922E1AC245AA667003C8B10 /* Vortex */,
+				3922E1AF245AA667003C8B10 /* ShineWhite */,
+				3922E1B3245AA667003C8B10 /* Scale */,
+				3922E1B7245AA667003C8B10 /* Shake */,
+				3922E1BB245AA667003C8B10 /* SoulOut */,
+				3922E1BF245AA667003C8B10 /* Glitch */,
+				3922E1C3245AA667003C8B10 /* splitScreen */,
+				3922E1CE245AA667003C8B10 /* Normal */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		3922E19E245AA667003C8B10 /* Gray */ = {
+			isa = PBXGroup;
+			children = (
+				3922E19F245AA667003C8B10 /* gray.vsh */,
+				3922E1A0245AA667003C8B10 /* gray.fsh */,
+			);
+			path = Gray;
+			sourceTree = "<group>";
+		};
+		3922E1A1245AA667003C8B10 /* Reversed */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1A2245AA667003C8B10 /* reversed.fsh */,
+				3922E1A3245AA667003C8B10 /* reversed.vsh */,
+			);
+			path = Reversed;
+			sourceTree = "<group>";
+		};
+		3922E1A4245AA667003C8B10 /* Mosaic */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1A5245AA667003C8B10 /* mosaic.vsh */,
+				3922E1A6245AA667003C8B10 /* mosaic6.fsh */,
+				3922E1A7245AA667003C8B10 /* mosaic3.fsh */,
+				3922E1A8245AA667003C8B10 /* mosaic.fsh */,
+				3922E1A9245AA667003C8B10 /* mosaic3.vsh */,
+				3922E1AA245AA667003C8B10 /* mosaic6.h */,
+				3922E1AB245AA667003C8B10 /* mosaic6.vsh */,
+			);
+			path = Mosaic;
+			sourceTree = "<group>";
+		};
+		3922E1AC245AA667003C8B10 /* Vortex */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1AD245AA667003C8B10 /* vortex.vsh */,
+				3922E1AE245AA667003C8B10 /* vortex.fsh */,
+			);
+			path = Vortex;
+			sourceTree = "<group>";
+		};
+		3922E1AF245AA667003C8B10 /* ShineWhite */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1B0245AA667003C8B10 /* shineWhite.vsh */,
+				3922E1B1245AA667003C8B10 /* shineWhite.fsh */,
+				3922E1B2245AA667003C8B10 /* shineWhite.h */,
+			);
+			path = ShineWhite;
+			sourceTree = "<group>";
+		};
+		3922E1B3245AA667003C8B10 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1B4245AA667003C8B10 /* scale.h */,
+				3922E1B5245AA667003C8B10 /* scale.vsh */,
+				3922E1B6245AA667003C8B10 /* scale.fsh */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		3922E1B7245AA667003C8B10 /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1B8245AA667003C8B10 /* shake.fsh */,
+				3922E1B9245AA667003C8B10 /* shake.vsh */,
+				3922E1BA245AA667003C8B10 /* shake.h */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
+		3922E1BB245AA667003C8B10 /* SoulOut */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1BC245AA667003C8B10 /* soulOut.vsh */,
+				3922E1BD245AA667003C8B10 /* soulOut.fsh */,
+				3922E1BE245AA667003C8B10 /* soulOut.h */,
+			);
+			path = SoulOut;
+			sourceTree = "<group>";
+		};
+		3922E1BF245AA667003C8B10 /* Glitch */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1C0245AA667003C8B10 /* glitch.vsh */,
+				3922E1C1245AA667003C8B10 /* glitch.fsh */,
+				3922E1C2245AA667003C8B10 /* glitch.h */,
+			);
+			path = Glitch;
+			sourceTree = "<group>";
+		};
+		3922E1C3245AA667003C8B10 /* splitScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1C4245AA667003C8B10 /* splitScreen3.vsh */,
+				3922E1C5245AA667003C8B10 /* splitScreen2.vsh */,
+				3922E1C6245AA667003C8B10 /* splitScreen4.vsh */,
+				3922E1C7245AA667003C8B10 /* splitScreen6.vsh */,
+				3922E1C8245AA667003C8B10 /* splitScreen9.fsh */,
+				3922E1C9245AA667003C8B10 /* splitScreen4.fsh */,
+				3922E1CA245AA667003C8B10 /* splitScreen6.fsh */,
+				3922E1CB245AA667003C8B10 /* splitScreen3.fsh */,
+				3922E1CC245AA667003C8B10 /* splitScreen2.fsh */,
+				3922E1CD245AA667003C8B10 /* splitScreen9.vsh */,
+			);
+			path = splitScreen;
+			sourceTree = "<group>";
+		};
+		3922E1CE245AA667003C8B10 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1CF245AA667003C8B10 /* normal.fsh */,
+				3922E1D0245AA667003C8B10 /* normal.vsh */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		3922E1F3245AA68C003C8B10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1F6245AA68C003C8B10 /* YYFilterBarCell.h */,
+				3922E1F4245AA68C003C8B10 /* YYFilterBarCell.m */,
+				3922E1F7245AA68C003C8B10 /* YYFilterBar.h */,
+				3922E1F5245AA68C003C8B10 /* YYFilterBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3922E1FA245AA6A5003C8B10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3922E1FB245AA71E003C8B10 /* GPUStillImageVC.h */,
+				3922E1FC245AA71E003C8B10 /* GPUStillImageVC.m */,
+				3922E1FE245AA735003C8B10 /* GPUVideoCameraVC.h */,
+				3922E1FF245AA735003C8B10 /* GPUVideoCameraVC.m */,
+				3922E20C245AACBF003C8B10 /* GPUTakePhotoVC.h */,
+				3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */,
+				3922E201245AA78D003C8B10 /* CustomImageFilterVC.h */,
+				3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8A220601642D28835A3BC218 /* Frameworks */ = {
@@ -97,7 +367,6 @@
 				FED910F7F6C41C6E7506053B /* Pods-BestYou.debug.xcconfig */,
 				9D0EF24474053BF8C3400142 /* Pods-BestYou.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,9 +429,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922E1EE245AA667003C8B10 /* splitScreen3.fsh in Resources */,
+				3922E1DA245AA667003C8B10 /* mosaic6.vsh in Resources */,
+				3922E1DB245AA667003C8B10 /* vortex.vsh in Resources */,
+				3922E1D1245AA667003C8B10 /* gray.vsh in Resources */,
+				3922E1E9245AA667003C8B10 /* splitScreen4.vsh in Resources */,
+				3922E1EB245AA667003C8B10 /* splitScreen9.fsh in Resources */,
+				3922E1D5245AA667003C8B10 /* mosaic.vsh in Resources */,
+				3922E19C245AA613003C8B10 /* test_girl.jpg in Resources */,
 				3922E18F245AA1D9003C8B10 /* LaunchScreen.storyboard in Resources */,
+				3922E1D3245AA667003C8B10 /* reversed.fsh in Resources */,
+				3922E1F0245AA667003C8B10 /* splitScreen9.vsh in Resources */,
+				3922E1DD245AA667003C8B10 /* shineWhite.vsh in Resources */,
+				3922E1E1245AA667003C8B10 /* shake.fsh in Resources */,
+				3922E1D8245AA667003C8B10 /* mosaic.fsh in Resources */,
+				3922E1EF245AA667003C8B10 /* splitScreen2.fsh in Resources */,
+				3922E1E7245AA667003C8B10 /* splitScreen3.vsh in Resources */,
+				3922E19B245AA613003C8B10 /* kunkun.jpg in Resources */,
 				3922E18C245AA1D9003C8B10 /* Assets.xcassets in Resources */,
 				3922E18A245AA1D5003C8B10 /* Main.storyboard in Resources */,
+				3922E1DF245AA667003C8B10 /* scale.vsh in Resources */,
+				3922E1E6245AA667003C8B10 /* glitch.fsh in Resources */,
+				3922E1DC245AA667003C8B10 /* vortex.fsh in Resources */,
+				3922E1D9245AA667003C8B10 /* mosaic3.vsh in Resources */,
+				3922E1DE245AA667003C8B10 /* shineWhite.fsh in Resources */,
+				3922E1ED245AA667003C8B10 /* splitScreen6.fsh in Resources */,
+				3922E1F2245AA667003C8B10 /* normal.vsh in Resources */,
+				3922E1E8245AA667003C8B10 /* splitScreen2.vsh in Resources */,
+				3922E1D2245AA667003C8B10 /* gray.fsh in Resources */,
+				3922E1D7245AA667003C8B10 /* mosaic3.fsh in Resources */,
+				3922E1F1245AA667003C8B10 /* normal.fsh in Resources */,
+				3922E1D4245AA667003C8B10 /* reversed.vsh in Resources */,
+				3922E1EC245AA667003C8B10 /* splitScreen4.fsh in Resources */,
+				3922E1E5245AA667003C8B10 /* glitch.vsh in Resources */,
+				3922E1E2245AA667003C8B10 /* shake.vsh in Resources */,
+				3922E1E3245AA667003C8B10 /* soulOut.vsh in Resources */,
+				3922E1E0245AA667003C8B10 /* scale.fsh in Resources */,
+				3922E1D6245AA667003C8B10 /* mosaic6.fsh in Resources */,
+				3922E1EA245AA667003C8B10 /* splitScreen6.vsh in Resources */,
+				3922E1E4245AA667003C8B10 /* soulOut.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,10 +520,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */,
 				3922E187245AA1D5003C8B10 /* ViewController.m in Sources */,
 				3922E181245AA1D5003C8B10 /* AppDelegate.m in Sources */,
+				3922E200245AA735003C8B10 /* GPUVideoCameraVC.m in Sources */,
+				3922E1F8245AA68C003C8B10 /* YYFilterBarCell.m in Sources */,
+				3922E1FD245AA71E003C8B10 /* GPUStillImageVC.m in Sources */,
 				3922E192245AA1D9003C8B10 /* main.m in Sources */,
 				3922E184245AA1D5003C8B10 /* SceneDelegate.m in Sources */,
+				3922E1F9245AA68C003C8B10 /* YYFilterBar.m in Sources */,
+				3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

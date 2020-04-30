@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GPUTakePhotoVC.h
 //  BestYou
 //
 //  Created by 胡阳 on 2020/4/30.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, strong) UIWindow *window;
+@interface GPUTakePhotoVC : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
