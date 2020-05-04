@@ -11,6 +11,7 @@
 #import "GPUStillImageVC.h"
 #import "GPUVideoCameraVC.h"
 #import "GPUTakePhotoVC.h"
+#import "ShortVideoVC.h"
 
 #import <Masonry/Masonry.h>
 #import <TZImagePickerController/TZImagePickerController.h>
@@ -32,7 +33,7 @@ static NSString *const kBYListCellID = @"kBYListCellId";
     // Do any additional setup after loading the view.
     
     
-    _items = @[@"自定义滤镜", @"GPUImage 图片滤镜", @"GPUImage 拍照", @"GPUImage 录像"];
+    _items = @[@"自定义滤镜", @"GPUImage 图片滤镜", @"GPUImage 拍照", @"GPUImage 录像", @"短视频"];
     [self setupTableView];
 }
 
@@ -84,6 +85,10 @@ static NSString *const kBYListCellID = @"kBYListCellId";
     } else if (indexPath.row == 3) {
         GPUVideoCameraVC *vc = [[GPUVideoCameraVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 4) {
+        ShortVideoVC *vc = [[ShortVideoVC alloc] init];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:vc animated:YES completion:NULL];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

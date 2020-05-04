@@ -58,6 +58,8 @@
 		3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */; };
 		3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */; };
 		3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E211245AC5BA003C8B10 /* BYUtil.m */; };
+		840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40F92460457E0093512A /* ShortVideoVC.m */; };
+		840B40FD246046080093512A /* YYRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40FC246046080093512A /* YYRecordButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +131,10 @@
 		3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUTakePhotoVC.m; sourceTree = "<group>"; };
 		3922E210245AC5BA003C8B10 /* BYUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYUtil.h; sourceTree = "<group>"; };
 		3922E211245AC5BA003C8B10 /* BYUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYUtil.m; sourceTree = "<group>"; };
+		840B40F82460457E0093512A /* ShortVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortVideoVC.h; sourceTree = "<group>"; };
+		840B40F92460457E0093512A /* ShortVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortVideoVC.m; sourceTree = "<group>"; };
+		840B40FB246046080093512A /* YYRecordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRecordButton.h; sourceTree = "<group>"; };
+		840B40FC246046080093512A /* YYRecordButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRecordButton.m; sourceTree = "<group>"; };
 		9D0EF24474053BF8C3400142 /* Pods-BestYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestYou.release.xcconfig"; path = "Target Support Files/Pods-BestYou/Pods-BestYou.release.xcconfig"; sourceTree = "<group>"; };
 		F6D968720038DFB656BCE6A4 /* libPods-BestYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BestYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED910F7F6C41C6E7506053B /* Pods-BestYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestYou.debug.xcconfig"; path = "Target Support Files/Pods-BestYou/Pods-BestYou.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +344,8 @@
 				3922E1F4245AA68C003C8B10 /* YYFilterBarCell.m */,
 				3922E1F7245AA68C003C8B10 /* YYFilterBar.h */,
 				3922E1F5245AA68C003C8B10 /* YYFilterBar.m */,
+				840B40FB246046080093512A /* YYRecordButton.h */,
+				840B40FC246046080093512A /* YYRecordButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +361,8 @@
 				3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */,
 				3922E201245AA78D003C8B10 /* CustomImageFilterVC.h */,
 				3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */,
+				840B40F82460457E0093512A /* ShortVideoVC.h */,
+				840B40F92460457E0093512A /* ShortVideoVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -535,6 +545,7 @@
 			files = (
 				3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */,
 				3922E187245AA1D5003C8B10 /* ViewController.m in Sources */,
+				840B40FD246046080093512A /* YYRecordButton.m in Sources */,
 				3922E181245AA1D5003C8B10 /* AppDelegate.m in Sources */,
 				3922E200245AA735003C8B10 /* GPUVideoCameraVC.m in Sources */,
 				3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */,
@@ -542,6 +553,7 @@
 				3922E1FD245AA71E003C8B10 /* GPUStillImageVC.m in Sources */,
 				3922E192245AA1D9003C8B10 /* main.m in Sources */,
 				3922E184245AA1D5003C8B10 /* SceneDelegate.m in Sources */,
+				840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */,
 				3922E1F9245AA68C003C8B10 /* YYFilterBar.m in Sources */,
 				3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */,
 			);
