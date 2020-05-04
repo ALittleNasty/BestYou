@@ -93,31 +93,33 @@ static NSString *const kBYListCellID = @"kBYListCellId";
 
 - (void)selectImageAtIndex:(NSInteger)index
 {
-    NSString *imgPath = [[NSBundle mainBundle] pathForResource:@"test_girl" ofType:@"jpg"];
-    UIImage *img = [UIImage imageWithContentsOfFile:imgPath];
-    if (index == 0) {
-        CustomImageFilterVC *vc = [[CustomImageFilterVC alloc] init];
-        vc.image = img;
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if (index == 1) {
-        GPUStillImageVC *vc = [[GPUStillImageVC alloc] init];
-        vc.image = img;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+//    NSString *imgPath = [[NSBundle mainBundle] pathForResource:@"test_girl" ofType:@"jpg"];
+//    UIImage *img = [UIImage imageWithContentsOfFile:imgPath];
+//    if (index == 0) {
+//        CustomImageFilterVC *vc = [[CustomImageFilterVC alloc] init];
+//        vc.image = img;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    } else if (index == 1) {
+//        GPUStillImageVC *vc = [[GPUStillImageVC alloc] init];
+//        vc.image = img;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
     
-//    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:nil];
-//    [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
-//
-//        if (index == 0) {
-//            CustomImageFilterVC *vc = [[CustomImageFilterVC alloc] init];
-//            vc.image = img;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        } else if (index == 1) {
-//            GPUStillImageVC *vc = [[GPUStillImageVC alloc] init];
-//            vc.image = img;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//    }];
-//    [self presentViewController:imagePickerVc animated:YES completion:nil];
+    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:nil];
+    [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
+
+        if (index == 0) {
+            CustomImageFilterVC *vc = [[CustomImageFilterVC alloc] init];
+            vc.modalPresentationStyle = 0;
+            vc.image = photos.firstObject;
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (index == 1) {
+            GPUStillImageVC *vc = [[GPUStillImageVC alloc] init];
+            vc.modalPresentationStyle = 0;
+            vc.image = photos.firstObject;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }];
+    [self presentViewController:imagePickerVc animated:YES completion:nil];
 }
 @end
