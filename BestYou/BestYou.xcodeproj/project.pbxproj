@@ -15,7 +15,6 @@
 		3922E18C245AA1D9003C8B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3922E18B245AA1D9003C8B10 /* Assets.xcassets */; };
 		3922E18F245AA1D9003C8B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3922E18D245AA1D9003C8B10 /* LaunchScreen.storyboard */; };
 		3922E192245AA1D9003C8B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E191245AA1D9003C8B10 /* main.m */; };
-		3922E19B245AA613003C8B10 /* kunkun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3922E199245AA613003C8B10 /* kunkun.jpg */; };
 		3922E19C245AA613003C8B10 /* test_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3922E19A245AA613003C8B10 /* test_girl.jpg */; };
 		3922E1D1245AA667003C8B10 /* gray.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E19F245AA667003C8B10 /* gray.vsh */; };
 		3922E1D2245AA667003C8B10 /* gray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3922E1A0245AA667003C8B10 /* gray.fsh */; };
@@ -58,6 +57,7 @@
 		3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */; };
 		3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */; };
 		3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E211245AC5BA003C8B10 /* BYUtil.m */; };
+		39F341AE246248B700F6CEDD /* YYFilterListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F341AD246248B700F6CEDD /* YYFilterListView.m */; };
 		840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40F92460457E0093512A /* ShortVideoVC.m */; };
 		840B40FD246046080093512A /* YYRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40FC246046080093512A /* YYRecordButton.m */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,6 @@
 		3922E18E245AA1D9003C8B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3922E190245AA1D9003C8B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3922E191245AA1D9003C8B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3922E199245AA613003C8B10 /* kunkun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunkun.jpg; sourceTree = "<group>"; };
 		3922E19A245AA613003C8B10 /* test_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_girl.jpg; sourceTree = "<group>"; };
 		3922E19F245AA667003C8B10 /* gray.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.vsh; sourceTree = "<group>"; };
 		3922E1A0245AA667003C8B10 /* gray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gray.fsh; sourceTree = "<group>"; };
@@ -131,6 +130,9 @@
 		3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUTakePhotoVC.m; sourceTree = "<group>"; };
 		3922E210245AC5BA003C8B10 /* BYUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYUtil.h; sourceTree = "<group>"; };
 		3922E211245AC5BA003C8B10 /* BYUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYUtil.m; sourceTree = "<group>"; };
+		39F341AC246248B700F6CEDD /* YYFilterListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYFilterListView.h; sourceTree = "<group>"; };
+		39F341AD246248B700F6CEDD /* YYFilterListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYFilterListView.m; sourceTree = "<group>"; };
+		39F341AF246251E200F6CEDD /* BYMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMacro.h; sourceTree = "<group>"; };
 		840B40F82460457E0093512A /* ShortVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortVideoVC.h; sourceTree = "<group>"; };
 		840B40F92460457E0093512A /* ShortVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortVideoVC.m; sourceTree = "<group>"; };
 		840B40FB246046080093512A /* YYRecordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRecordButton.h; sourceTree = "<group>"; };
@@ -196,8 +198,8 @@
 		3922E198245AA613003C8B10 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				3922E199245AA613003C8B10 /* kunkun.jpg */,
 				3922E19A245AA613003C8B10 /* test_girl.jpg */,
+				39F341AF246251E200F6CEDD /* BYMacro.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -346,6 +348,8 @@
 				3922E1F5245AA68C003C8B10 /* YYFilterBar.m */,
 				840B40FB246046080093512A /* YYRecordButton.h */,
 				840B40FC246046080093512A /* YYRecordButton.m */,
+				39F341AC246248B700F6CEDD /* YYFilterListView.h */,
+				39F341AD246248B700F6CEDD /* YYFilterListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -468,7 +472,6 @@
 				3922E1D8245AA667003C8B10 /* mosaic.fsh in Resources */,
 				3922E1EF245AA667003C8B10 /* splitScreen2.fsh in Resources */,
 				3922E1E7245AA667003C8B10 /* splitScreen3.vsh in Resources */,
-				3922E19B245AA613003C8B10 /* kunkun.jpg in Resources */,
 				3922E18C245AA1D9003C8B10 /* Assets.xcassets in Resources */,
 				3922E18A245AA1D5003C8B10 /* Main.storyboard in Resources */,
 				3922E1DF245AA667003C8B10 /* scale.vsh in Resources */,
@@ -551,6 +554,7 @@
 				3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */,
 				3922E1F8245AA68C003C8B10 /* YYFilterBarCell.m in Sources */,
 				3922E1FD245AA71E003C8B10 /* GPUStillImageVC.m in Sources */,
+				39F341AE246248B700F6CEDD /* YYFilterListView.m in Sources */,
 				3922E192245AA1D9003C8B10 /* main.m in Sources */,
 				3922E184245AA1D5003C8B10 /* SceneDelegate.m in Sources */,
 				840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */,

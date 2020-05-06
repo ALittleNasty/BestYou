@@ -513,7 +513,7 @@ typedef struct {
 
 
 /*
- 
+
  参考叶孤城的文章: https://zhuanlan.zhihu.com/p/32194345
  
 - (void)getCurrentImage

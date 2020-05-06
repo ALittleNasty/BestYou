@@ -8,6 +8,7 @@
 
 #import "ShortVideoVC.h"
 #import "YYRecordButton.h"
+#import "YYFilterListView.h"
 
 #import <AVKit/AVKit.h>
 #import <Masonry/Masonry.h>
@@ -98,6 +99,7 @@ static CGFloat const kButtonWH = 60.f;
 - (void)switchButtonAction
 {
     
+    
 }
 
 - (void)filterButtonAction
@@ -107,7 +109,8 @@ static CGFloat const kButtonWH = 60.f;
 
 - (void)beautyButtonAction
 {
-    
+    YYFilterListView *view = [[YYFilterListView alloc] initWithFrame:CGRectZero];
+    [view showWithType:YYFilterListViewTypeBeauty];
 }
 
 #pragma mark - Hide Status Bar
