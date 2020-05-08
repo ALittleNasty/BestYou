@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showWithType:(YYFilterListViewType)type;
 
-- (void)dismissWithCompletion:(YYFilterListViewCompletion)completion;
+- (void)dismiss;
 
 @end
 
