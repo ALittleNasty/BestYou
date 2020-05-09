@@ -10,6 +10,8 @@
 #import "BYMacro.h"
 #import "YYFilterBarCell.h"
 
+#import "BYUtil.h"
+
 #define kCellSize 60.f
 
 #define kContainerHeight    200.f
@@ -21,6 +23,9 @@
 
 /** 容器 */
 @property (nonatomic, strong) UIView *containerView;
+
+/** 关闭按钮 */
+@property (nonatomic, strong) UIButton *closeBtn;
 
 /** 滤镜列表 */
 @property (nonatomic, strong) UIView *filterListView;
@@ -34,6 +39,12 @@
 /** 滤镜列表数据 */
 @property (nonatomic, copy) NSArray *items;
 
+/** 滤镜类型索引 */
+@property (nonatomic, assign) NSInteger filterTypeIndex;
+
+/** 当前选中的滤镜索引 */
+@property (nonatomic, assign) NSInteger currentFilterIndex;
+
 @end
 
 @implementation YYFilterListView
@@ -43,27 +54,26 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        NSDictionary *normal = @{@"name": @"正常", @"shaderName": @"normal"};
-        NSDictionary *split2 = @{@"name": @"2分屏", @"shaderName": @"splitScreen2"};
-        NSDictionary *split3 = @{@"name": @"3分屏", @"shaderName": @"splitScreen3"};
-        NSDictionary *split4 = @{@"name": @"4分屏", @"shaderName": @"splitScreen4"};
-        NSDictionary *split6 = @{@"name": @"6分屏", @"shaderName": @"splitScreen6"};
-        NSDictionary *split9 = @{@"name":@"9分屏", @"shaderName": @"splitScreen9"};
-        NSDictionary *gray = @{@"name":@"灰度", @"shaderName": @"gray"};
-        NSDictionary *reversed = @{@"name":@"翻转", @"shaderName": @"reversed"};
-        NSDictionary *vortex = @{@"name":@"旋涡", @"shaderName": @"vortex"};
-        NSDictionary *mosaic = @{@"name":@"矩形", @"shaderName": @"mosaic"};
-        NSDictionary *mosaic3 = @{@"name":@"三角形", @"shaderName": @"mosaic3"};
-        NSDictionary *mosaic6 = @{@"name":@"六边形", @"shaderName": @"mosaic6"};
-        NSDictionary *scale = @{@"name":@"缩放", @"shaderName": @"scale"};
-        NSDictionary *soulOut = @{@"name":@"灵魂出窍", @"shaderName": @"soulOut"};
-        NSDictionary *shake = @{@"name":@"晃动", @"shaderName": @"shake"};
-        NSDictionary *glitch = @{@"name":@"毛刺", @"shaderName": @"glitch"};
-        NSDictionary *shineWhite = @{@"name":@"闪白", @"shaderName": @"shineWhite"};
-        _items = @[normal, glitch, shineWhite, shake, soulOut, scale,
-                   mosaic, mosaic3, mosaic6,
-                   split2, split3, split4, split6, split9,
-                   gray, reversed, vortex];
+//        NSDictionary *normal = @{@"name": @"正常", @"shaderName": @"normal"};
+//        NSDictionary *split2 = @{@"name": @"2分屏", @"shaderName": @"splitScreen2"};
+//        NSDictionary *split3 = @{@"name": @"3分屏", @"shaderName": @"splitScreen3"};
+//        NSDictionary *split4 = @{@"name": @"4分屏", @"shaderName": @"splitScreen4"};
+//        NSDictionary *split6 = @{@"name": @"6分屏", @"shaderName": @"splitScreen6"};
+//        NSDictionary *split9 = @{@"name":@"9分屏", @"shaderName": @"splitScreen9"};
+//        NSDictionary *gray = @{@"name":@"灰度", @"shaderName": @"gray"};
+//        NSDictionary *reversed = @{@"name":@"翻转", @"shaderName": @"reversed"};
+//        NSDictionary *vortex = @{@"name":@"旋涡", @"shaderName": @"vortex"};
+//        NSDictionary *mosaic = @{@"name":@"矩形", @"shaderName": @"mosaic"};
+//        NSDictionary *mosaic3 = @{@"name":@"三角形", @"shaderName": @"mosaic3"};
+//        NSDictionary *mosaic6 = @{@"name":@"六边形", @"shaderName": @"mosaic6"};
+//        NSDictionary *scale = @{@"name":@"缩放", @"shaderName": @"scale"};
+//        NSDictionary *soulOut = @{@"name":@"灵魂出窍", @"shaderName": @"soulOut"};
+//        NSDictionary *shake = @{@"name":@"晃动", @"shaderName": @"shake"};
+//        NSDictionary *glitch = @{@"name":@"毛刺", @"shaderName": @"glitch"};
+//        NSDictionary *shineWhite = @{@"name":@"闪白", @"shaderName": @"shineWhite"};
+        _filterTypeIndex = 0;    // 默认显示 分屏滤镜
+        _currentFilterIndex = 0; // 默认选中第一个原图滤镜
+        _items = [BYUtil allFilterList];
         
         [self setupWrapper];
         
@@ -84,9 +94,6 @@
     [_darkView setAlpha:0];
     [_darkView setFrame:[UIScreen mainScreen].bounds];
     [_darkView setBackgroundColor:[UIColor cyanColor]];
-    _darkView.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss)];
-    [_darkView addGestureRecognizer:tap];
     [self addSubview:_darkView];
     
     // 容器
@@ -146,6 +153,12 @@
     _beautySwitch.on = isOn;
     [_beautySwitch addTarget:self action:@selector(beautySwitchAction:) forControlEvents:UIControlEventValueChanged];
     [_containerView addSubview:_beautySwitch];
+    
+    _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_closeBtn setImage:[UIImage imageNamed:@"close_white"] forState:UIControlStateNormal];
+    [_closeBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+    _closeBtn.frame = CGRectMake(kScreenWidth-50.f, 0.f, 40.f, 40.f);
+    [_containerView addSubview:_closeBtn];
 }
 
 #pragma mark - UICollectionViewDelegate & UICollectionViewDataSource
@@ -157,28 +170,31 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _items.count;
+    NSArray *filters = _items[_filterTypeIndex];
+    return filters.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     YYFilterBarCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kYYFilterBarCellID forIndexPath:indexPath];
-    NSDictionary *info = _items[indexPath.item];
+    NSArray *filters = _items[_filterTypeIndex];
+    NSDictionary *info = filters[indexPath.item];
     cell.name = info[@"name"];
-    cell.isChoosen = (0 == indexPath.item);
+    cell.isChoosen = (_currentFilterIndex == indexPath.item);
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (_selection && (_currentIndex != indexPath.row)) {
-//
-//        _currentIndex = indexPath.item;
-//        [_collectionView reloadData];
-//
-//        NSDictionary *info = _items[indexPath.item];
-//        _selection(info[@"shaderName"]);
-//    }
+    if (_filterChangeCallback && (_currentFilterIndex != indexPath.row)) {
+
+        _currentFilterIndex = indexPath.item;
+        [_collectionView reloadData];
+
+        NSArray *filters = _items[_filterTypeIndex];
+        NSDictionary *info = filters[indexPath.item];
+        _filterChangeCallback(info[@"filter"]);
+    }
 }
 
 
@@ -188,25 +204,24 @@
 {
     BOOL isOn = sender.isOn;
     [[NSUserDefaults standardUserDefaults] setBool:isOn forKey:kBeautySwitchKey];
+    
+    if (_beautyChangeCallback) {
+        _beautyChangeCallback(isOn);
+    } 
 }
 
 - (void)filterTypeBtnAction:(UIButton *)btn
-{
-    NSLog(@"%zd", btn.tag-100);
+{ 
+    _filterTypeIndex = btn.tag - 100;
+    [_collectionView reloadData];
 }
 
 #pragma mark - Show & Dismiss
 
-- (void)showWithType:(YYFilterListViewType)type
+- (void)show
 {
     [_darkView setAlpha:1.f];
-    [_darkView setUserInteractionEnabled:YES];
     [_containerView setHidden:NO];
-    if (type == YYFilterListViewTypeDefault) {
-        [self setupFilterList];
-    } else if (type == YYFilterListViewTypeBeauty) {
-        [self setupBeautyView];
-    }
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
     __weak typeof(self) ws = self;
@@ -220,7 +235,6 @@
 - (void)dismiss
 {
     [_darkView setAlpha:0];
-    [_darkView setUserInteractionEnabled:NO];
     [_containerView setHidden:YES];
     [self removeFromSuperview];
 }

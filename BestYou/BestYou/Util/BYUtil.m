@@ -51,4 +51,27 @@
     return [[NSThread currentThread] isMainThread];
 }
 
++ (NSArray *)allFilterList
+{
+    // 原图滤镜
+    NSDictionary *originalDict = @{@"name": @"原图", @"filter" : @"GPUImageFilter"};
+    
+    // 分屏滤镜
+    NSDictionary *split2Dict = @{@"name": @"二分屏", @"filter" : @"YYSplitScreen2Filter"};
+    NSDictionary *split3Dict = @{@"name": @"三分屏", @"filter" : @"YYSplitScreen3Filter"};
+    NSDictionary *split4Dict = @{@"name": @"四分屏", @"filter" : @"YYSplitScreen4Filter"};
+    NSDictionary *split6Dict = @{@"name": @"六分屏", @"filter" : @"YYSplitScreen6Filter"};
+    NSDictionary *split9Dict = @{@"name": @"九分屏", @"filter" : @"YYSplitScreen9Filter"};
+    NSArray *spliterArray = @[originalDict, split2Dict, split3Dict, split4Dict, split6Dict, split9Dict];
+    
+    // 自定义滤镜
+    NSArray *customArray = @[originalDict];
+    
+    // GPUImage 第三库的滤镜
+    NSArray *gpuArray = @[originalDict];
+    
+    
+    return @[spliterArray, customArray, gpuArray];
+}
+
 @end

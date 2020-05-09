@@ -57,6 +57,12 @@
 		3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */; };
 		3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */; };
 		3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E211245AC5BA003C8B10 /* BYUtil.m */; };
+		39B007642466518D006B8255 /* YYGPUTimeBaseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */; };
+		39B0076924665564006B8255 /* YYSplitScreen2Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B0076824665564006B8255 /* YYSplitScreen2Filter.m */; };
+		39B0076C24665596006B8255 /* YYSplitScreen3Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B0076B24665596006B8255 /* YYSplitScreen3Filter.m */; };
+		39B0076F246655A1006B8255 /* YYSplitScreen4Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B0076E246655A1006B8255 /* YYSplitScreen4Filter.m */; };
+		39B00772246655AB006B8255 /* YYSplitScreen6Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B00771246655AB006B8255 /* YYSplitScreen6Filter.m */; };
+		39B00775246655B9006B8255 /* YYSplitScreen9Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B00774246655B9006B8255 /* YYSplitScreen9Filter.m */; };
 		39F341AE246248B700F6CEDD /* YYFilterListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F341AD246248B700F6CEDD /* YYFilterListView.m */; };
 		840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40F92460457E0093512A /* ShortVideoVC.m */; };
 		840B40FD246046080093512A /* YYRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B40FC246046080093512A /* YYRecordButton.m */; };
@@ -130,6 +136,18 @@
 		3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUTakePhotoVC.m; sourceTree = "<group>"; };
 		3922E210245AC5BA003C8B10 /* BYUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYUtil.h; sourceTree = "<group>"; };
 		3922E211245AC5BA003C8B10 /* BYUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYUtil.m; sourceTree = "<group>"; };
+		39B007622466518D006B8255 /* YYGPUTimeBaseFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGPUTimeBaseFilter.h; sourceTree = "<group>"; };
+		39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGPUTimeBaseFilter.m; sourceTree = "<group>"; };
+		39B0076724665564006B8255 /* YYSplitScreen2Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen2Filter.h; sourceTree = "<group>"; };
+		39B0076824665564006B8255 /* YYSplitScreen2Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSplitScreen2Filter.m; sourceTree = "<group>"; };
+		39B0076A24665596006B8255 /* YYSplitScreen3Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen3Filter.h; sourceTree = "<group>"; };
+		39B0076B24665596006B8255 /* YYSplitScreen3Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSplitScreen3Filter.m; sourceTree = "<group>"; };
+		39B0076D246655A1006B8255 /* YYSplitScreen4Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen4Filter.h; sourceTree = "<group>"; };
+		39B0076E246655A1006B8255 /* YYSplitScreen4Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSplitScreen4Filter.m; sourceTree = "<group>"; };
+		39B00770246655AB006B8255 /* YYSplitScreen6Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen6Filter.h; sourceTree = "<group>"; };
+		39B00771246655AB006B8255 /* YYSplitScreen6Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSplitScreen6Filter.m; sourceTree = "<group>"; };
+		39B00773246655B9006B8255 /* YYSplitScreen9Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen9Filter.h; sourceTree = "<group>"; };
+		39B00774246655B9006B8255 /* YYSplitScreen9Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSplitScreen9Filter.m; sourceTree = "<group>"; };
 		39F341AC246248B700F6CEDD /* YYFilterListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYFilterListView.h; sourceTree = "<group>"; };
 		39F341AD246248B700F6CEDD /* YYFilterListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYFilterListView.m; sourceTree = "<group>"; };
 		39F341AF246251E200F6CEDD /* BYMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMacro.h; sourceTree = "<group>"; };
@@ -175,6 +193,7 @@
 		3922E17E245AA1D4003C8B10 /* BestYou */ = {
 			isa = PBXGroup;
 			children = (
+				39B007612466515E006B8255 /* Filters */,
 				3922E20F245AC5A5003C8B10 /* Util */,
 				3922E1FA245AA6A5003C8B10 /* Controller */,
 				3922E1F3245AA68C003C8B10 /* View */,
@@ -244,12 +263,12 @@
 			isa = PBXGroup;
 			children = (
 				3922E1A5245AA667003C8B10 /* mosaic.vsh */,
-				3922E1A6245AA667003C8B10 /* mosaic6.fsh */,
-				3922E1A7245AA667003C8B10 /* mosaic3.fsh */,
 				3922E1A8245AA667003C8B10 /* mosaic.fsh */,
 				3922E1A9245AA667003C8B10 /* mosaic3.vsh */,
+				3922E1A7245AA667003C8B10 /* mosaic3.fsh */,
 				3922E1AA245AA667003C8B10 /* mosaic6.h */,
 				3922E1AB245AA667003C8B10 /* mosaic6.vsh */,
+				3922E1A6245AA667003C8B10 /* mosaic6.fsh */,
 			);
 			path = Mosaic;
 			sourceTree = "<group>";
@@ -378,6 +397,41 @@
 				3922E211245AC5BA003C8B10 /* BYUtil.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		39B007612466515E006B8255 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				39B007622466518D006B8255 /* YYGPUTimeBaseFilter.h */,
+				39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */,
+				39B007662466551F006B8255 /* Customized */,
+				39B00765246654EF006B8255 /* SplitScreen */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		39B00765246654EF006B8255 /* SplitScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39B0076724665564006B8255 /* YYSplitScreen2Filter.h */,
+				39B0076824665564006B8255 /* YYSplitScreen2Filter.m */,
+				39B0076A24665596006B8255 /* YYSplitScreen3Filter.h */,
+				39B0076B24665596006B8255 /* YYSplitScreen3Filter.m */,
+				39B0076D246655A1006B8255 /* YYSplitScreen4Filter.h */,
+				39B0076E246655A1006B8255 /* YYSplitScreen4Filter.m */,
+				39B00770246655AB006B8255 /* YYSplitScreen6Filter.h */,
+				39B00771246655AB006B8255 /* YYSplitScreen6Filter.m */,
+				39B00773246655B9006B8255 /* YYSplitScreen9Filter.h */,
+				39B00774246655B9006B8255 /* YYSplitScreen9Filter.m */,
+			);
+			path = SplitScreen;
+			sourceTree = "<group>";
+		};
+		39B007662466551F006B8255 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Customized;
 			sourceTree = "<group>";
 		};
 		8A220601642D28835A3BC218 /* Frameworks */ = {
@@ -548,18 +602,24 @@
 			files = (
 				3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */,
 				3922E187245AA1D5003C8B10 /* ViewController.m in Sources */,
+				39B00772246655AB006B8255 /* YYSplitScreen6Filter.m in Sources */,
 				840B40FD246046080093512A /* YYRecordButton.m in Sources */,
 				3922E181245AA1D5003C8B10 /* AppDelegate.m in Sources */,
 				3922E200245AA735003C8B10 /* GPUVideoCameraVC.m in Sources */,
+				39B00775246655B9006B8255 /* YYSplitScreen9Filter.m in Sources */,
 				3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */,
 				3922E1F8245AA68C003C8B10 /* YYFilterBarCell.m in Sources */,
+				39B0076924665564006B8255 /* YYSplitScreen2Filter.m in Sources */,
 				3922E1FD245AA71E003C8B10 /* GPUStillImageVC.m in Sources */,
 				39F341AE246248B700F6CEDD /* YYFilterListView.m in Sources */,
 				3922E192245AA1D9003C8B10 /* main.m in Sources */,
+				39B0076F246655A1006B8255 /* YYSplitScreen4Filter.m in Sources */,
 				3922E184245AA1D5003C8B10 /* SceneDelegate.m in Sources */,
 				840B40FA2460457E0093512A /* ShortVideoVC.m in Sources */,
 				3922E1F9245AA68C003C8B10 /* YYFilterBar.m in Sources */,
+				39B0076C24665596006B8255 /* YYSplitScreen3Filter.m in Sources */,
 				3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */,
+				39B007642466518D006B8255 /* YYGPUTimeBaseFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

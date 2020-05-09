@@ -10,20 +10,22 @@
  */
 #import <UIKit/UIKit.h>
 
-typedef void(^YYFilterListViewCompletion)(NSUInteger type, NSString *filterName, BOOL enableBeauty);
+typedef void(^YYFilterChangeCallback)(NSString * _Nullable filterName);
 
-typedef NS_ENUM(NSUInteger, YYFilterListViewType) {
-    
-    YYFilterListViewTypeDefault = 0, // 默认的滤镜列表
-    YYFilterListViewTypeBeauty = 1   // 是否开启美颜的开关
-};
+typedef void(^YYBeautyChangeCallback)(BOOL enableBeauty);
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YYFilterListView : UIView
 
+/// 滤镜切换的回调
+@property (nonatomic, copy) YYFilterChangeCallback filterChangeCallback;
 
-- (void)showWithType:(YYFilterListViewType)type;
+/// 开启/关闭美颜的回调
+@property (nonatomic, copy) YYBeautyChangeCallback beautyChangeCallback;
+
+
+- (void)show;
 
 - (void)dismiss;
 

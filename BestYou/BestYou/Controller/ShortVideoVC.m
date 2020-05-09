@@ -109,8 +109,29 @@ static CGFloat const kButtonWH = 60.f;
 
 - (void)beautyButtonAction
 {
+    __weak typeof(self) ws = self;
     YYFilterListView *view = [[YYFilterListView alloc] initWithFrame:CGRectZero];
-    [view showWithType:YYFilterListViewTypeBeauty];
+    view.filterChangeCallback = ^(NSString * _Nullable filterName) {
+        [ws switchFilerWithName:filterName];
+    };
+    view.beautyChangeCallback = ^(BOOL enableBeauty) {
+        [ws beautyActionWithFlag:enableBeauty];
+    };
+    [view show];
+}
+
+#pragma mark - Filter Switch
+
+- (void)switchFilerWithName:(NSString *)name
+{
+    NSLog(@"current select filter : %@", name);
+}
+
+#pragma mark - Enable Beauty
+
+- (void)beautyActionWithFlag:(BOOL)enableBeauty
+{
+    NSLog(@"%@", enableBeauty ? @"开启美颜" : @"关闭美颜");
 }
 
 #pragma mark - Hide Status Bar
