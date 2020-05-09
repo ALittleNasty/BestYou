@@ -57,6 +57,7 @@
 		3922E203245AA78D003C8B10 /* CustomImageFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E202245AA78D003C8B10 /* CustomImageFilterVC.m */; };
 		3922E20E245AACBF003C8B10 /* GPUTakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */; };
 		3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3922E211245AC5BA003C8B10 /* BYUtil.m */; };
+		397D8C652466946B004A684C /* LFGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 397D8C632466946B004A684C /* LFGPUImageBeautyFilter.m */; };
 		39B007642466518D006B8255 /* YYGPUTimeBaseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */; };
 		39B0076924665564006B8255 /* YYSplitScreen2Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B0076824665564006B8255 /* YYSplitScreen2Filter.m */; };
 		39B0076C24665596006B8255 /* YYSplitScreen3Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B0076B24665596006B8255 /* YYSplitScreen3Filter.m */; };
@@ -136,6 +137,8 @@
 		3922E20D245AACBF003C8B10 /* GPUTakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUTakePhotoVC.m; sourceTree = "<group>"; };
 		3922E210245AC5BA003C8B10 /* BYUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYUtil.h; sourceTree = "<group>"; };
 		3922E211245AC5BA003C8B10 /* BYUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYUtil.m; sourceTree = "<group>"; };
+		397D8C632466946B004A684C /* LFGPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		397D8C642466946B004A684C /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
 		39B007622466518D006B8255 /* YYGPUTimeBaseFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGPUTimeBaseFilter.h; sourceTree = "<group>"; };
 		39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGPUTimeBaseFilter.m; sourceTree = "<group>"; };
 		39B0076724665564006B8255 /* YYSplitScreen2Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSplitScreen2Filter.h; sourceTree = "<group>"; };
@@ -399,11 +402,21 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		397D8C622466946B004A684C /* LFGPUImageBeautyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				397D8C632466946B004A684C /* LFGPUImageBeautyFilter.m */,
+				397D8C642466946B004A684C /* LFGPUImageBeautyFilter.h */,
+			);
+			path = LFGPUImageBeautyFilter;
+			sourceTree = "<group>";
+		};
 		39B007612466515E006B8255 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
 				39B007622466518D006B8255 /* YYGPUTimeBaseFilter.h */,
 				39B007632466518D006B8255 /* YYGPUTimeBaseFilter.m */,
+				397D8C622466946B004A684C /* LFGPUImageBeautyFilter */,
 				39B007662466551F006B8255 /* Customized */,
 				39B00765246654EF006B8255 /* SplitScreen */,
 			);
@@ -606,6 +619,7 @@
 				840B40FD246046080093512A /* YYRecordButton.m in Sources */,
 				3922E181245AA1D5003C8B10 /* AppDelegate.m in Sources */,
 				3922E200245AA735003C8B10 /* GPUVideoCameraVC.m in Sources */,
+				397D8C652466946B004A684C /* LFGPUImageBeautyFilter.m in Sources */,
 				39B00775246655B9006B8255 /* YYSplitScreen9Filter.m in Sources */,
 				3922E212245AC5BA003C8B10 /* BYUtil.m in Sources */,
 				3922E1F8245AA68C003C8B10 /* YYFilterBarCell.m in Sources */,

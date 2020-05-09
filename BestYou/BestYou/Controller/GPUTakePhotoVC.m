@@ -83,7 +83,7 @@
 
 - (void)addGPUImageFilter:(GPUImageOutput<GPUImageInput> *)filter
 {
-    [_filterGroup addFilter:filter];
+    [_filterGroup addFilter:filter]; 
 
     GPUImageOutput<GPUImageInput> *newTerminalFilter = filter;
 

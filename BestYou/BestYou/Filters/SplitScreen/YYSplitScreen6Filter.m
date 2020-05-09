@@ -18,17 +18,17 @@ NSString *const kGPUImageSplitScreen6FragmentShaderString = SHADER_STRING
  void main()
  {
      lowp vec2 uv = textureCoordinate;
-     if (uv.y <= 0.5) {
-         uv.y = uv.y + 0.25;
+     if (uv.x <= 0.5) {
+         uv.x = uv.x + 0.25;
      } else {
-         uv.y = uv.y - 0.25;
+         uv.x = uv.x - 0.25;
      }
      
      
-     if (uv.x <= 1.0/3.0) {
-         uv.x = uv.x + 1.0/3.0;
-     } else if (uv.x > 2.0/3.0) {
-         uv.x = uv.x - 1.0/3.0;
+     if (uv.y <= 1.0/3.0) {
+         uv.y = uv.y + 1.0/3.0;
+     } else if (uv.y > 2.0/3.0) {
+         uv.y = uv.y - 1.0/3.0;
      }
      
      lowp vec4 mask = texture2D(inputImageTexture, uv);

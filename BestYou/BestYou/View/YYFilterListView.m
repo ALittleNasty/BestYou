@@ -93,7 +93,7 @@
     _darkView = [[UIView alloc] init];
     [_darkView setAlpha:0];
     [_darkView setFrame:[UIScreen mainScreen].bounds];
-    [_darkView setBackgroundColor:[UIColor cyanColor]];
+    [_darkView setBackgroundColor:[UIColor clearColor]];
     [self addSubview:_darkView];
     
     // 容器
@@ -117,7 +117,8 @@
         btn.layer.cornerRadius = 5.f;
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         btn.tag = 100 + i;
-        btn.frame = CGRectMake((btnLeftPadding + btnWidth) * i, btnY, btnWidth, btnHeight);
+        CGFloat btnX = (btnLeftPadding + btnWidth) * i + btnLeftPadding;
+        btn.frame = CGRectMake(btnX, btnY, btnWidth, btnHeight);
         [btn addTarget:self action:@selector(filterTypeBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [_containerView addSubview:btn];
     }
